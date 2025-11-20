@@ -9,11 +9,25 @@ Enhance your website's compliance with data privacy regulations using the 'site-
 
 ## 📦 Installation
 
-Install via Composer:
+1. **Install the package via Composer:**
+
 ```bash
 composer require saydum/site-policy
+```
+
+2. **Publish configuration and views:**
+```bash
 php artisan vendor:publish --tag=sitepolicy
+```
+
+3. **Include package routes in your web.php:**
+```bash
 echo "require __DIR__.'/sitepolicy.php';" >> routes/web.php
+```
+
+4. **Add the cookie banner to your Blade layout (e.g., before </body>):**
+```bladehtml
+@include('sitepolicy::modal')
 ```
 
 ## 📁 Project Structure
