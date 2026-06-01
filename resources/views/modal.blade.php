@@ -1,36 +1,44 @@
 <div id="cookieBanner"
      data-nosnippet
      style="
-     position:fixed;
-     bottom:20px;
-     left:50%;
-     transform:translateX(-50%);
-     z-index:9999;
-     max-width:800px;
-     padding:15px;
-     background:{{ config('sitepolicy.banner_bg') }};
-     color:{{ config('sitepolicy.text_color') }};
-     border-top:3px solid {{ config('sitepolicy.border_color') }};
-     border-radius:8px;
-     display:none;
-     align-items:center;
-     box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-     font-family: sans-serif;"
+         font-family: sans-serif;
+         font-weight: lighter;
+         position:fixed;
+         bottom:20px;
+         left:50%;
+         transform:translateX(-50%);
+         z-index:9999;
+         max-width:800px;
+         padding:15px;
+         background:{{ config('sitepolicy.banner_bg') }};
+         color:{{ config('sitepolicy.text_color') }};
+         border-top:3px solid {{ config('sitepolicy.border_color') }};
+         border-radius:8px;
+         display:none;
+         align-items:center;
+         box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+     "
 >
     <div style="flex:1; margin-right:10px; font-size:14px;">
         {{ config('sitepolicy.text') }}
-        <a href="{{ config('sitepolicy.link') }}" target="_blank"
-           style="color:{{ config('sitepolicy.text_color') }}; text-decoration:underline;">{{ config('sitepolicy.link_text') }}</a>.
+        <a
+            href="{{ config('sitepolicy.link') }}"
+            target="_blank"
+            style="
+                color:{{ config('sitepolicy.button_bg') }};
+                text-decoration:underline;">{{ config('sitepolicy.link_text') }}
+        </a>.
     </div>
     <button
         id="acceptCookies"
-        style="background:{{ config('sitepolicy.button_bg') }};
-        color:#fff;
-        border:none;
-        padding:8px 15px;
-        border-radius:5px;
-        cursor:pointer;
-        font-weight:bold;"
+        style="
+            background:{{ config('sitepolicy.button_bg') }};
+            color:#fff;
+            border:none;
+            padding:8px 15px;
+            border-radius:5px;
+            cursor:pointer;
+        "
     >
             {{ config('sitepolicy.button_text') }}
     </button>

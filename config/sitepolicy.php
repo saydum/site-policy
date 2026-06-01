@@ -3,11 +3,12 @@
 return [
     'text' => 'Мы используем cookies и сохраняем данные для улучшения работы сайта.',
     'link_text' => 'Политикой конфиденциальности',
-    'link' => '/policy.txt',
+    'link' => '/policy.pdf',
 
     'button_text' => 'ОК',
-    'banner_bg' => '#343a40',
     'button_bg' => '#00b533',
+
+    'banner_bg' => '#343a40',
     'text_color' => '#ffffff',
     'border_color' => '#00b533',
 
