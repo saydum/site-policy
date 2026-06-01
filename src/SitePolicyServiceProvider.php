@@ -15,7 +15,7 @@ class SitePolicyServiceProvider extends ServiceProvider
 
         // Публикация ресурсов
         $this->publishes([
-            __DIR__.'/../config/police.php' => config_path('police.php'),
+            __DIR__.'/../config/sitepolicy.php' => config_path('sitepolicy.php'),
             __DIR__.'/../resources/views' => resource_path('views/vendor/sitepolicy'),
         ], 'sitepolicy');
     }
@@ -23,7 +23,7 @@ class SitePolicyServiceProvider extends ServiceProvider
     public function register(): void
     {
         $this->mergeConfigFrom(
-            __DIR__.'/../config/police.php', 'police'
+            __DIR__.'/../config/sitepolicy.php', 'sitepolicy'
         );
     }
 }

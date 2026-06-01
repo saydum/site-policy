@@ -36,7 +36,7 @@ echo "require __DIR__.'/sitepolicy.php';" >> routes/web.php
 .
 ├── composer.json
 ├── config
-│   └── police.php
+│   └── sitepolicy.php
 ├── resources
 │   └── views
 │       └── modal.blade.php

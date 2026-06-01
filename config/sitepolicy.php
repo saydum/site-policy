@@ -5,9 +5,9 @@ return [
     'link_text' => 'Политикой конфиденциальности',
 
     /**
-     * police.txt, police.pdf
+     * sitepolicy.txt, sitepolicy.pdf
      */
-    'link' => '/police.txt',
+    'link' => '/sitepolicy.txt',
 
     'button_text' => 'ОК',
     'banner_bg' => '#343a40',
