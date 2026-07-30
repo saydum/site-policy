@@ -2,6 +2,7 @@
     "name": "saydum/site-policy",
     "description": "Пакет для вывода политики сайта в модальном окне",
     "type": "library",
+    "license": "MIT",
     "autoload": {
         "psr-4": {
             "Saydum\\SitePolicy\\": "src/"
